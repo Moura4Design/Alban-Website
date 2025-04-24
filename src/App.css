@@ -1,0 +1,361 @@
+/* GLOBAL */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container-fluid {
+   max-width: 1600px;
+   min-width: 320px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+.geral-margin {
+    margin-top: 60px;
+}
+
+.list-inline {
+    margin-top: 60px;
+    font-size: 15px;
+}
+
+.list-inline .color {
+    color: #282c34;
+    text-transform: uppercase;
+}
+
+.list-inline .color:hover {
+    text-decoration: none;
+}
+
+.active {
+    color: #7B7C80;
+}
+
+/* Home page to have the full image */
+.hero-container {
+    /* display: flex; */
+    height: 100vh;
+    /* width: 100%; */
+    /* align-items: center;
+    justify-content: center; */
+    background-image: url("/images/Nature/1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-top: -66px
+}
+
+.carousel-inner img {
+    width: 45%;
+    height: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 2vw;
+  height: 2vw;
+}
+
+.carousel .carousel-indicators li {background-color:white;}
+
+.carousel .carousel-indicators li.active {background-color: #282c34;} 
+
+/*NAVBAR (App.js)*/
+.navbar {
+    background-color: #282c34;
+}
+  
+.dropdown-menu {
+    background-color: #282c34;
+}
+  
+.social-links i {
+    display: block;
+    font-size: 2em;
+}
+  
+.options-languages {
+    font-size: 15px;
+    background: #282C34;
+    color: #7B7C80;
+    margin-left: 18px;
+}
+  
+/*PORTFOLIO page*/
+.card-portfolio {
+    width: 70vw;
+    margin: 0 auto;
+    /* margin-bottom: 50px; */
+    /* padding: 2rem 0; */
+}
+
+.card-portfolio_new {
+    /* width: 90vw; */
+    margin: auto;
+    margin-bottom: 50px;
+    display: block;
+}
+  
+.card-title {
+    color: #282c34;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+/* ABOUT PAGE */
+.about-body {
+    color: #7B7C80;
+}
+  
+p {
+    color: #7B7C80;
+}
+
+.cont_img {
+    position: relative;
+    width: 100%;
+}
+
+.cont_img {
+    width: 100%;
+    height: auto;
+}
+
+.cont_img .but {
+    position: absolute;
+    top: 34%;
+    left: 34%;
+    border-radius: 40%;
+    padding: 12px 15px;
+    color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+.cont_img .but:hover {
+    color:white;
+    text-decoration: none;
+}
+
+
+  
+/* CONTACT PAGE */
+form {
+    color: #7B7C80;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+  
+input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #7B7C80;
+}
+
+input:hover {
+    box-shadow: 10px 10px 10px #00000029;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+  
+input:focus {
+    outline: none;
+    /* border-color: #282c34; */
+}
+  
+.btnSubmit {
+    /* border: 1px solid #7B7C80; */
+    text-align: right;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btnSubmit > input:hover {
+    box-shadow: 10px 10px 10px #00000029;
+    transition: all 0.3s ease 0s;
+}
+  
+/* .btncontact {
+    color: blue;
+    background: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 25%;
+} */
+  
+.contactTextArea {
+    border-radius: 5px;
+    width: 100%;
+    /* box-sizing: border-box;  */
+    /* padding: 5px; */
+    height: 200px;
+    resize: none;
+}
+
+textarea:hover {
+    box-shadow: 10px 10px 10px #00000029;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+  
+textarea:focus {
+    outline: none;
+    /* border-color:#282c34; */
+}
+  
+label {
+    display: block;
+}
+  
+label span {
+    display: block;
+}
+
+.priceCard {
+    border-radius: 10px;
+}
+
+.priceHeader {
+    background-color: #282c34;
+    color: rgba(255,255,255,.5);
+    min-height: 130px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+  
+/* MEDIUM DEVICES > 767 */
+@media screen and (max-width: 767px) {
+    /*NAVBAR (App.js)*/
+    .dropdown-toggle{
+      margin-left: 10px;
+    }
+  
+    .options-languages {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+  
+    .social-links {
+      margin-left: 20px;
+    }
+  
+    .social-media {
+      margin-top: 15px;
+    }
+    
+}
+  
+  
+  
+/* Especial Devices for the card in portfolio */
+/* SMALL DEVICES */
+/* @media screen and (min-width:768px) { */
+    /* PORTFOLIO PAGE */
+    /* .card-portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+    }
+
+    .card-portfolio_new {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+    }
+} */
+  
+/* MEDIUM DEVICES */
+/* @media screen and (min-width:992px) { */
+    /* PORTFOLIO PAGE */
+
+    /* .card-portfolio {
+        width: 85vw;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-portfolio_new {
+        width: 60vw;
+        grid-template-columns: repeat(2, 1fr);
+    } */
+/* } */
+  
+/* LARGE DEVICES */
+/* @media screen and (min-width:1140px) { */
+    /* PORTFOLIO PAGE */
+    /* .card-portfolio {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card-portfolio_new {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
+
+
+
+/* Change button in page about */
+@media screen and (max-width: 1199px) {
+    .cont_img .but {
+        top: 32%;
+        left: 36%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cont_img .but {
+        /* top: 13%; */
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .text-about {
+        margin-top: 20px;
+    }
+
+    .cont_img .but {
+        top: 34%;
+        left: 36%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .cont_img .but {
+        top: 33%;
+        /* left: 35%; */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cont_img .but {
+        top: 31%;
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 338px) {
+   .card_style {
+       width: 200px !important;
+       height: 240px !important;
+   }
+
+   .card-title {
+       font-size: 16px;
+   }
+}
+
